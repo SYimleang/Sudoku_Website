@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Header -->
+    <head>
+            <title>Home</title>
+            <meta charset="utf-8" />
+            <meta name="description" content="Final Assignment of WEB222" />
+            <meta name="keywords" content="HTML, CSS, JavaScript, Sudoku" />
+            <meta name="author" content="Sasawat Yimleang" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="./css/styles.css" />
+            <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!-- Body -->
+    <body>
+        <div id="div1">
+            <!-- Nav -->
+            <header class="Navstyles_NavHeader">
+                <div class="Navstyle_NavWrapper">
+                    <div class="Namestyles">
+                        <svg viewBox="0 5 125 30">
+                            <text fill="#ffffff" font-weight="bold" font-size="26" font-family="Verdana" x="0" y="30">
+                                SUDOKU
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="Navstyles_Menu">
+                        <ul>
+                            <li class="NavItem">
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li class="NavItem">
+                                <a href="info.html">INFO</a>
+                            </li>
+                            <li class="NavItem">
+                                <a href="reviews.html">REVIEWS</a>
+                            </li>
+                            <li class="NavItem">
+                                <a href="about.html">ABOUT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-container">
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <a href="index.html" class="active">
+                        <svg viewBox="-50 15 125 18">
+                            <text fill="#ffffff" font-weight="bold" font-size="16" font-family="Verdana" x="0" y="30">
+                                SUDOKU
+                            </text>
+                        </svg>
+                    </a>
+                    <div id="NavLinks">
+                        <a href="index.html">HOME</a>
+                        <a href="info.html">INFO</a>
+                        <a href="reviews.html">REVIEWS</a>
+                        <a href="reviews.html">REVIEWS</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <!-- End smartphone / tablet look -->
+                </div>
+            </header>
+            <!-- Main content-->
+            <main>
+                <h1>Welcome to Sudoku!</h1>
+                
+                <div class="background-wrapper">
+                    <h2><b>Overview</b></h2>
+                    <div class="Topic_Line"></div>
+                    <section>
+                        
+                        <p class="Text_Content">
+                            Sudoku is a classic logic-based number placement game that challenges your mind and problem-solving skills.
+                            The game is played on a 9x9 grid, divided into nine 3x3 subgrids or "regions." The objective is to fill the grid
+                            with numbers from 1 to 9 so that each row, column, and region contains all the numbers exactly once.
+                            <br>
+                            <br>
+                            Sudoku is a game that offers endless variations and difficulty levels. It requires careful analysis, deduction,
+                            and a bit of trial and error to solve. The game's rules are simple, but mastering the techniques to solve even
+                            the most challenging puzzles can be a rewarding experience.
+                        </p>
+                    </section>
+                    <img src="https://i.ytimg.com/vi/Byr2E_rpVsM/maxresdefault.jpg" alt="Sudoku with hand" width="40%">
+                    <figcaption><b>Sudoku game</b></figcaption>
+                    <div class="Video_Content">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BO-p6w52gb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <section>
+                        <p class="Text_Content">
+                            Are you ready to embark on a journey of logical thinking and strategic puzzle-solving? Enjoy the thrill of
+                            Sudoku and see how far your skills can take you!
+                        </p>
+                    </section>
+                    <img src="https://jaeheonshim.com/wp-content/uploads/2019/11/ezgif-2-4fb086c69495.gif" alt="Sudoku .gif" width="25%">
+                    <section>
+                        <p class="Text_Content">
+                           If you are interested in Sudoku. Do not forget to receive the news of Sudoku from us!!!
+                        </p>
+                    </section>
+                    <!-- Input form -->
+                    <section class="Input_Form">
+                        <form id="newsletterForm" action="https://httpbin.org/post">
+                            <label for="email">Enter your email to join our newsletter:</label>
+                            <input type="email" id="email" name="email" required>
+                            <input type="hidden" name="name" value="Sasawat Yimleang">
+                            <button type="submit">Join</button>
+                        </form>
+                    </section>
+                </div>
+            </main>
+            <!-- Foot -->
+            <footer class="Footerstyles">
+                <p>&copy; 2023 Sasawat Yimleang | Website created for WEB222 Final Assessment</p>
+            </footer>
+            <script src="./js/Nav.js"></script>
+        </div>
+    </body>
+
+</html>

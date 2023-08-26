@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Header -->
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Final Assignment of WEB222" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, Sudoku" />
+        <meta name="author" content="Sasawat Yimleang" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!-- Body -->
+    <body>
+        <div id="div1">
+            <!-- Nav -->
+            <header class="Navstyles_NavHeader">
+                <div class="Navstyle_NavWrapper">
+                    <div class="Namestyles">
+                        <svg viewBox="0 5 125 30">
+                            <text fill="#ffffff" font-weight="bold" font-size="26" font-family="Verdana" x="0" y="30">
+                                SUDOKU
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="Navstyles_Menu">
+                        <ul>
+                            <li class="NavItem">
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li class="NavItem">
+                                <a href="info.html">INFO</a>
+                            </li>
+                            <li class="NavItem">
+                                <a href="reviews.html">REVIEWS</a>
+                            </li>
+                            <li class="NavItem">
+                                <a href="about.html">ABOUT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-container">
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <a href="index.html" class="active">
+                        <svg viewBox="-50 15 125 18">
+                            <text fill="#ffffff" font-weight="bold" font-size="16" font-family="Verdana" x="0" y="30">
+                                SUDOKU
+                            </text>
+                        </svg>
+                    </a>
+                    <div id="NavLinks">
+                        <a href="index.html">HOME</a>
+                        <a href="info.html">INFO</a>
+                        <a href="reviews.html">REVIEWS</a>
+                        <a href="reviews.html">REVIEWS</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <!-- End smartphone / tablet look -->
+                </div>
+            </header>
+            <!-- Main content-->
+            <main>
+                <h1>Reviews</h1>
+                <div class="background-wrapper">
+                    <section class="Reviews_Content">
+                        <div id="review-container">
+                        <!-- Review cards will be dynamically generated here -->
+                        </div>
+                    </section>
+                        <h3>Add a Review</h3>
+                        <section class="Input_Form">
+                        <form id="review-form">
+                        <!-- Form inputs for adding a new review -->
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="date" id="date" required>
+                        <select id="rating" required>
+                            <option value="1">1 - ★</option>
+                            <option value="2">2 - ★ ★</option>
+                            <option value="3">3 - ★ ★ ★</option>
+                            <option value="4">4 - ★ ★ ★ ★</option>
+                            <option value="5">5 - ★ ★ ★ ★ ★</option>
+                        </select>
+                        <textarea id="review" placeholder="Write your review here" required></textarea>
+                        <button type="submit">Create</button>
+                        </form>
+                    </section>
+                </div>
+            </main>
+            <!-- Foot -->
+            <footer class="Footerstyles">
+                <p>&copy; 2023 Sasawat Yimleang | Website created for WEB222 Final Assessment</p>
+            </footer>
+            <!-- JavaScript File -->
+            <script src="./js/data.js"></script>
+            <script src="./js/reviews.js"></script>
+        </div>
+    </body>
+</html>

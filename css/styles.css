@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* Main section style */
+#div1 {
+  background-color: rgba(51, 45, 87, 0.909);
+  min-height: 90vh;
+  font-family: 'Muli', sans-serif;
+}
+#div1 body {
+  box-sizing: border-box;
+  font-family: proxima-nova-regular, sans-serif;
+  color: rgb(255,255,255);
+}
+.w-screen-relative {
+  flex-direction: flow;
+  background-image: linear-gradient(121.14deg, #173744 37.73%, #5f92a7 114.3%);
+  width: 100vw;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  border: 0 solid;
+}
+.background-wrapper {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+.Text_Content {
+  width: 95%;
+  font-size: 18px;
+  max-width: 100ch;
+  color: white;
+}
+
+/* Navigation style */
+  .Navstyles_MenuSpan {
+    font-size: 24px;
+  }
+  .Navstyles_NavHeader {
+    top: 0px; 
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    font-weight: 400;
+    color: rgb(173, 173, 173);
+    text-transform: none;
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    transition: top 0.2s ease 0s;
+    padding: 0px 6vw 0px 5vw;
+    z-index: 1000;
+    outline: 0px;
+    font-weight: 400;
+    color: rgb(173, 173, 173);
+    text-transform: none;
+  }
+  .Navstyles_MenuBotton {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    width: 20.6px;
+    height: 14.4px;
+    object-fit: contain;
+    margin-left: -15px;
+    padding-top: 3px;
+    cursor: pointer;
+    outline: none;
+  }
+  .Navstyle_NavWrapper {
+    justify-content: flex-end;
+    justify-content: space-between;
+    height: 50px;
+    position: relative;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .Namestyles {
+    margin-right: 16px;
+    left: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 30px;
+    outline: none;
+  }
+  .Navstyles_Menu{
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    background-color: rgb(0, 0, 0);
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }
+  .Navstyles_Menu ul{
+    display: inline-flex;
+    list-style: none;
+    margin: 0px 0px 0px 150px;
+    padding: 5px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+    justify-content:space-evenly;
+  }
+  .NavItem {
+    font-size: 20px;
+    outline: 0px;
+  }
+/* Navigation style for desktop screen */
+  @media (min-width: 401px){
+    #Navestyles_mobileMenuDiv {
+      display: none;
+    }
+    .Mobile-container {
+      display: none;
+    }
+    .mobile-container {
+      display: none;
+    }
+  }
+/* Navigation style for mobile screen */
+  @media (max-width: 400px) {
+    .Navstyle_NavWrapper {
+      display: none;
+    }
+    .mobile-container {
+      max-width: 480px;
+      margin: auto;
+      background-color: #555;
+      height: auto;
+      color: white;
+      border-radius: 10px;
+    }
+    .topnav {
+      overflow: hidden;
+      background-color: black;
+      position: relative;
+      padding-right: 40%;
+      height: 50px;
+    }
+    #NavLinks {
+      display: block;
+      z-index: 10;
+    }
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    .topnav a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      margin: 0px;
+      padding: 0px;
+      width: 50px;
+      height: 50px;
+      right: 0;
+      top: 0;
+    }
+    .topnav a:hover {
+      background-color: #dddddd00;
+      color: black;
+    }
+    .active {
+      background-color: #04AA6D;
+      color: white;
+    }
+  }
+
+/* Footer style */
+.Footerstyles p {
+  color: rgba(253, 253, 253, 0.735);
+}
+.text_footer {
+  list-style-type: none;
+}
+.text_footer h2 {
+  text-align: left;
+  padding-left: 20px;
+}
+.list_foot {
+  padding-left: 20px;
+}
+
+/* Card class and id style */
+#review-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reviewsBox {
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  opacity: 0.5;
+  border: 2px solid white;
+}
+
+/* General Element style */
+footer, header, main {
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  max-width: var(--width-content);
+}
+section{
+  background-color: rgb(70, 69, 94);
+  color: rgb(232, 230, 230);
+  margin: 2%;
+  padding: 0px 0px;
+  border-radius: 10px;
+}
+h1, h2, h3 {
+  color: rgb(232, 230, 230);
+  text-align: center;
+}
+figcaption {
+  text-align: center; 
+  color:white
+}
+span {
+  font-size: 24px;
+}
+img,
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a:link {
+  color: rgb(173, 195, 230);
+  text-decoration: none;
+  background-color: transparent;
+}
+a:visited {
+  color: #ea6b6b;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: rgb(6, 244, 46);
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+/* Additional style */
+#MyImage {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  display: block;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 80px;
+}
+.text-header {
+  margin-left: 25px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #ddd;
+}
+.Confirmstyle_Wrapper {
+  background-color: rgba(203, 201, 201, 0.724);
+  margin-top: 20px;
+  border-radius: 15px;
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+.Image_Style {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Image_Content {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.Video_Content {
+  margin: 0px 25%;
+  position:relative;
+  overflow: hidden;
+  padding: 2% 0px;
+}
+
+.Input_Form{
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(232, 230, 230);
+  margin: 20px;
+  border-radius: 20px;
+}
+.Reviews_Content {
+  color: rgb(255, 255, 255);
+}
+.Reviews_Content h3, p {
+  color: rgb(255, 255, 255);
+}
+.Topic_Line {
+  height: 3px;
+  width: 100%;
+  background-color: white
+}
