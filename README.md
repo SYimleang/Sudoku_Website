@@ -12,3 +12,6 @@
 
 ## Visit Webpage
 <a href="https://sudoku-website.netlify.app/">Sudoku Website</a>
+
+### Note
+This website was created from scratch without any tools or framework!!!
