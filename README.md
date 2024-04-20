@@ -16,3 +16,8 @@
 ### Note
 This website was created from scratch without any tools or framework!!!<br />
 I deploy this website through Netlify
+
+### Screenshots
+
+![HomePage](./img/HomePage.png)
+![CollectionPage](./img/CollectionPage.png)
