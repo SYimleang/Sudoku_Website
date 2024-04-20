@@ -1,18 +1,20 @@
-
 const { reviews } = window;
 
 // Function to generate a review card HTML for each review object
 function generateReviewsCard(review) {
-
   // Change format of rating and date
   const ratingStars = "★".repeat(review.rating) + "☆".repeat(5 - review.rating);
-  const formattedDate = new Date(review.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+  const formattedDate = new Date(review.date).toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
   // Create div element to contain the content of the card.
   const card = document.createElement("div");
   card.classList.add("reviewsBox");
 
-  const nameElem = document.createElement("h3")
+  const nameElem = document.createElement("h3");
   nameElem.textContent = review.name;
   const dateElem = document.createElement("p");
   dateElem.textContent = formattedDate;

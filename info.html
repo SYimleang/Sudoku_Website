@@ -1,171 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Header -->
-    <head>
-        <title>Home</title>
-        <meta charset="utf-8" />
-        <meta name="description" content="Final Assignment of WEB222" />
-        <meta name="keywords" content="HTML, CSS, JavaScript, Sudoku" />
-        <meta name="author" content="Sasawat Yimleang" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/styles.css" />
-        <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <!-- Body -->
-    <body>
-        <div id="div1">
-            <!-- Nav -->
-            <header class="Navstyles_NavHeader">
-                <div class="Navstyle_NavWrapper">
-                    <div class="Namestyles">
-                        <svg viewBox="0 5 125 30">
-                            <text fill="#ffffff" font-weight="bold" font-size="26" font-family="Verdana" x="0" y="30">
-                                SUDOKU
-                            </text>
-                        </svg>
-                    </div>
-                    <div class="Navstyles_Menu">
-                        <ul>
-                            <li class="NavItem">
-                                <a href="index.html">HOME</a>
-                            </li>
-                            <li class="NavItem">
-                                <a href="info.html">INFO</a>
-                            </li>
-                            <li class="NavItem">
-                                <a href="reviews.html">REVIEWS</a>
-                            </li>
-                            <li class="NavItem">
-                                <a href="about.html">ABOUT</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mobile-container">
-                <!-- Top Navigation Menu -->
-                <div class="topnav">
-                    <a href="index.html" class="active">
-                        <svg viewBox="-50 15 125 18">
-                            <text fill="#ffffff" font-weight="bold" font-size="16" font-family="Verdana" x="0" y="30">
-                                SUDOKU
-                            </text>
-                        </svg>
-                    </a>
-                    <div id="NavLinks">
-                        <a href="index.html">HOME</a>
-                        <a href="info.html">INFO</a>
-                        <a href="reviews.html">REVIEWS</a>
-                        <a href="reviews.html">REVIEWS</a>
-                    </div>
-                    <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
-                    <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-                <!-- End smartphone / tablet look -->
-                </div>
-            </header>
-            <!-- Main content-->
-            <main>
-                <h1>Sudoku Information</h1>
-                <div class="background-wrapper">
-                <section>
-                        <h2>History of Sudoku</h2>
-                        <p class="Text_Content">
-                        The history of Sudoku can be traced back to the late 19th century with the concept of "Latin Squares," introduced by
-                        Swiss mathematician Leonhard Euler. The idea was further developed in the 19th century by French mathematician
-                        Édouard Lucas and others.
-                        </p>
-                        <p class="Text_Content">
-                        The modern version of Sudoku that we know today was created in 1979 by Howard Garns, an American architect and puzzle
-                        constructor. Garns named the puzzle "Number Place," and it appeared in puzzle magazines in the United States and other
-                        countries. However, it didn't gain significant popularity at that time.
-                        </p>
-                        <p class="Text_Content">
-                        In the 1980s, Sudoku gained more attention when it was published in a Japanese puzzle magazine under the name "Sudoku,"
-                        which means "single number" in Japanese. The puzzle became immensely popular in Japan during the 1990s.
-                        </p>
-                        <p class="Text_Content">
-                        The Sudoku craze spread globally in 2004 when British newspaper "The Times" started publishing Sudoku puzzles. Since
-                        then, Sudoku has appeared in newspapers, magazines, and puzzle books around the world, becoming a favorite pastime for
-                        people of all ages and backgrounds.
-                        </p>
-                        <p class="Text_Content">
-                        Today, Sudoku is widely recognized as one of the most popular and loved number puzzles globally. Its appeal lies in its
-                        simplicity and challenging nature, relying on logic and deductive reasoning to solve the puzzle. Sudoku has become a
-                        classic and enduring puzzle loved by puzzle enthusiasts worldwide.
-                        </p>
-                    </section>
-                    <!-- Video Content for History -->
-                    <div class="Video_Content">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3ipNVbxj74s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <section>
-                        <h2>How to Play Sudoku</h2>
-                        <p class="Text_Content">
-                        Sudoku is played on a 9x9 grid, which is divided into nine 3x3 subgrids called "regions." The goal is to fill in the
-                        entire grid with digits from 1 to 9. Each row, column, and region must contain all of the digits exactly once. The
-                        puzzle starts with some cells pre-filled with numbers, and you need to complete the grid using logical reasoning to
-                        determine the missing numbers.
-                        </p>
-                        
-                        <p class="Text_Content">
-                        The key rules to remember when playing Sudoku are:
-                        </p>
-                        <ul class="Text_Content">
-                        <li>Each row must contain all digits from 1 to 9 without repetition.</li>
-                        <li>Each column must contain all digits from 1 to 9 without repetition.</li>
-                        <li>Each 3x3 region must contain all digits from 1 to 9 without repetition.</li>
-                        </ul>
-                        <p class="Text_Content">
-                        To solve a Sudoku puzzle, start by identifying the cells with given numbers and use them as a starting point. Then, look
-                        for patterns and use logic to fill in the empty cells. Eliminate possibilities and make educated guesses when necessary
-                        until the puzzle is completed correctly.
-                        </p>
-                    </section>
-                    <!-- Image Content for "How to play"-->
-                    <div class="Image_Style">
-                        <img class="Image_Content" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg/1200px-Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png" alt="Sudoku empty Image" width="300px" height="300px">
-                        <img class="Image_Content" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Sudoku_Puzzle_by_L2G-20050714_solution_standardized_layout.svg/250px-Sudoku_Puzzle_by_L2G-20050714_solution_standardized_layout.svg.png" alt="Sudoku finished Image" width="300px" height="300px">
-                    </div>
-                    <section>
-                        <h2>Tips and Strategies</h2>
-                        <p class="Text_Content">
-                        Solving Sudoku puzzles can be challenging, but with practice and the right strategies, you can improve your skills. Here
-                        are some tips to help you solve Sudoku puzzles effectively:
-                        </p>
-                        <ol class="Text_Content">
-                        <li>Start with the given numbers: Begin by identifying the cells with given numbers. Use them as a starting point and
-                            look for any obvious patterns or connections.</li>
-                        <li>Look for single possibilities: Check each row, column, and region for cells with only one possible number. Fill them
-                            in, as they are the most straightforward deductions.</li>
-                        <li>Use pencil marks: In more complex puzzles, use pencil marks (small numbers) in empty cells to keep track of possible
-                            candidates for each cell.</li>
-                        <li>Eliminate possibilities: As you fill in more numbers, use the existing numbers to eliminate possibilities in other
-                            cells within the same row, column, and region.</li>
-                        <li>Identify hidden singles: Look for hidden single possibilities in a row, column, or region. These are numbers that
-                            can only go in one cell due to the numbers already present in that row, column, or region.</li>
-                        <li>Practice regularly: Like any skill, solving Sudoku puzzles requires practice. The more puzzles you solve, the more
-                            patterns and techniques you'll recognize.</li>
-                        </ol>
-                        <p class="Text_Content">
-                        With time and practice, you'll become more skilled at solving Sudoku puzzles and enjoy the challenge of these
-                        mind-stimulating number puzzles.
-                        </p>
-                        <!-- Video Content for Tips and Strategies -->
-                        <br>
-                        
-                    </section>
-                    <div class="Video_Content">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8zRXDsGydeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen alt="How to play Sudoku video"></iframe>
-                    </div>
-                </div>
-            </main>
-        
-            <!-- Footer -->
-            <footer class="Footerstyles">
-            <p>&copy; 2023 Sasawat Yimleang | Website created for WEB222 Final Assessment</p>
-          </footer>
+  <!-- Header -->
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Final Project of WEB222" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Sudoku" />
+    <meta name="author" content="Sasawat Yimleang" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <!-- Body -->
+  <body>
+    <div id="div1">
+      <!-- Nav -->
+      <header class="Navstyles_NavHeader">
+        <div class="Navstyle_NavWrapper">
+          <div class="Namestyles">
+            <svg viewBox="0 5 125 30">
+              <text
+                fill="#ffffff"
+                font-weight="bold"
+                font-size="26"
+                font-family="Verdana"
+                x="0"
+                y="30"
+              >
+                SUDOKU
+              </text>
+            </svg>
+          </div>
+          <div class="Navstyles_Menu">
+            <ul>
+              <li class="NavItem">
+                <a href="index.html">HOME</a>
+              </li>
+              <li class="NavItem">
+                <a href="info.html">INFO</a>
+              </li>
+              <li class="NavItem">
+                <a href="reviews.html">REVIEWS</a>
+              </li>
+              <li class="NavItem">
+                <a href="about.html">ABOUT</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </body>
+        <div class="mobile-container">
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+            <a href="index.html" class="active">
+              <svg viewBox="-50 15 125 18">
+                <text
+                  fill="#ffffff"
+                  font-weight="bold"
+                  font-size="16"
+                  font-family="Verdana"
+                  x="0"
+                  y="30"
+                >
+                  SUDOKU
+                </text>
+              </svg>
+            </a>
+            <div id="NavLinks">
+              <a href="index.html">HOME</a>
+              <a href="info.html">INFO</a>
+              <a href="reviews.html">REVIEWS</a>
+              <a href="reviews.html">REVIEWS</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <!-- End smartphone / tablet look -->
+        </div>
+      </header>
+      <!-- Main content-->
+      <main>
+        <h1>Sudoku Information</h1>
+        <div class="background-wrapper">
+          <section>
+            <h2>History of Sudoku</h2>
+            <p class="Text_Content">
+              The history of Sudoku can be traced back to the late 19th century
+              with the concept of "Latin Squares," introduced by Swiss
+              mathematician Leonhard Euler. The idea was further developed in
+              the 19th century by French mathematician Édouard Lucas and others.
+            </p>
+            <p class="Text_Content">
+              The modern version of Sudoku that we know today was created in
+              1979 by Howard Garns, an American architect and puzzle
+              constructor. Garns named the puzzle "Number Place," and it
+              appeared in puzzle magazines in the United States and other
+              countries. However, it didn't gain significant popularity at that
+              time.
+            </p>
+            <p class="Text_Content">
+              In the 1980s, Sudoku gained more attention when it was published
+              in a Japanese puzzle magazine under the name "Sudoku," which means
+              "single number" in Japanese. The puzzle became immensely popular
+              in Japan during the 1990s.
+            </p>
+            <p class="Text_Content">
+              The Sudoku craze spread globally in 2004 when British newspaper
+              "The Times" started publishing Sudoku puzzles. Since then, Sudoku
+              has appeared in newspapers, magazines, and puzzle books around the
+              world, becoming a favorite pastime for people of all ages and
+              backgrounds.
+            </p>
+            <p class="Text_Content">
+              Today, Sudoku is widely recognized as one of the most popular and
+              loved number puzzles globally. Its appeal lies in its simplicity
+              and challenging nature, relying on logic and deductive reasoning
+              to solve the puzzle. Sudoku has become a classic and enduring
+              puzzle loved by puzzle enthusiasts worldwide.
+            </p>
+          </section>
+          <!-- Video Content for History -->
+          <div class="Video_Content">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/3ipNVbxj74s"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <section>
+            <h2>How to Play Sudoku</h2>
+            <p class="Text_Content">
+              Sudoku is played on a 9x9 grid, which is divided into nine 3x3
+              subgrids called "regions." The goal is to fill in the entire grid
+              with digits from 1 to 9. Each row, column, and region must contain
+              all of the digits exactly once. The puzzle starts with some cells
+              pre-filled with numbers, and you need to complete the grid using
+              logical reasoning to determine the missing numbers.
+            </p>
+
+            <p class="Text_Content">
+              The key rules to remember when playing Sudoku are:
+            </p>
+            <ul class="Text_Content">
+              <li>
+                Each row must contain all digits from 1 to 9 without repetition.
+              </li>
+              <li>
+                Each column must contain all digits from 1 to 9 without
+                repetition.
+              </li>
+              <li>
+                Each 3x3 region must contain all digits from 1 to 9 without
+                repetition.
+              </li>
+            </ul>
+            <p class="Text_Content">
+              To solve a Sudoku puzzle, start by identifying the cells with
+              given numbers and use them as a starting point. Then, look for
+              patterns and use logic to fill in the empty cells. Eliminate
+              possibilities and make educated guesses when necessary until the
+              puzzle is completed correctly.
+            </p>
+          </section>
+          <!-- Image Content for "How to play"-->
+          <div class="Image_Style">
+            <img
+              class="Image_Content"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg/1200px-Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png"
+              alt="Sudoku empty Image"
+              width="300px"
+              height="300px"
+            />
+            <img
+              class="Image_Content"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Sudoku_Puzzle_by_L2G-20050714_solution_standardized_layout.svg/250px-Sudoku_Puzzle_by_L2G-20050714_solution_standardized_layout.svg.png"
+              alt="Sudoku finished Image"
+              width="300px"
+              height="300px"
+            />
+          </div>
+          <section>
+            <h2>Tips and Strategies</h2>
+            <p class="Text_Content">
+              Solving Sudoku puzzles can be challenging, but with practice and
+              the right strategies, you can improve your skills. Here are some
+              tips to help you solve Sudoku puzzles effectively:
+            </p>
+            <ol class="Text_Content">
+              <li>
+                Start with the given numbers: Begin by identifying the cells
+                with given numbers. Use them as a starting point and look for
+                any obvious patterns or connections.
+              </li>
+              <li>
+                Look for single possibilities: Check each row, column, and
+                region for cells with only one possible number. Fill them in, as
+                they are the most straightforward deductions.
+              </li>
+              <li>
+                Use pencil marks: In more complex puzzles, use pencil marks
+                (small numbers) in empty cells to keep track of possible
+                candidates for each cell.
+              </li>
+              <li>
+                Eliminate possibilities: As you fill in more numbers, use the
+                existing numbers to eliminate possibilities in other cells
+                within the same row, column, and region.
+              </li>
+              <li>
+                Identify hidden singles: Look for hidden single possibilities in
+                a row, column, or region. These are numbers that can only go in
+                one cell due to the numbers already present in that row, column,
+                or region.
+              </li>
+              <li>
+                Practice regularly: Like any skill, solving Sudoku puzzles
+                requires practice. The more puzzles you solve, the more patterns
+                and techniques you'll recognize.
+              </li>
+            </ol>
+            <p class="Text_Content">
+              With time and practice, you'll become more skilled at solving
+              Sudoku puzzles and enjoy the challenge of these mind-stimulating
+              number puzzles.
+            </p>
+            <!-- Video Content for Tips and Strategies -->
+            <br />
+          </section>
+          <div class="Video_Content">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/8zRXDsGydeQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              alt="How to play Sudoku video"
+            ></iframe>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="Footerstyles">
+        <p>
+          &copy; 2023 Sasawat Yimleang | Website created for WEB222 Final
+          Project
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
